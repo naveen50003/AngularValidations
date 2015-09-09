@@ -1,0 +1,55 @@
+
+<div id="newEvent">
+	<h2>Add New Event</h2>
+	<form id="uploadForm" enctype="multipart/form-data"  name="myForm" novalidate>
+		<label for="courseName">Course Name:</label>
+		<input type="text" ng-model="newSession.courseName" name="courseName"/>
+		<label for="courseCode">Course Code:</label>
+		<input type="text" ng-model="newSession.courseCode" name="courseCode"/>
+		<label for="trainer">Trainer Name:</label>
+		<input type="text" ng-model="newSession.trainer" name="trainer"/>
+		<label for="venue">Venue:</label>
+		<input type="text" ng-model="newSession.venue" name="venue"/>
+		<label for="audience">Target Audience:</label>
+		<input type="text" ng-model="newSession.targetAudience" name="audience"/>
+		<label for='startDate'>Start Date</label>
+		<input type="text" id="startDate" ng-model="newSession.startDate">
+		
+
+		<label for='endDate'>End Date</label>
+		<input type="text" id="endDate" data-format="DD-MM-YYYY HH:mm" data-template="DD / MM / YYYY     HH : mm" ng-model="newSession.endDate">
+		<label for='startTime'>Start Time</label>
+		<input type="text" id="startTime" data-format="HH:mm" data-template="DD / MM / YYYY     HH : mm" ng-model="newSession.startTime">
+		<label for='endTime'>End Time</label>
+		<input type="text" id="endTime" data-format="HH:mm" data-template="DD / MM / YYYY     HH : mm" ng-model="newSession.endTime">
+		<button class="addEvent" ng-click="addEvent(newSession)">Add New Event</button>
+		<button type="reset" class="cancel" ng-click="cancel()">Cancel</button>
+	</form>
+</div>
+<script>
+	$(document).ready(function() {
+	
+$( "#startDate" ).datepicker();
+$( "#endDate" ).datepicker();
+console.log("doc ready");
+
+
+jQuery.browser = {};
+(function () {
+    jQuery.browser.msie = false;
+    jQuery.browser.version = 0;
+    if (navigator.userAgent.match(/MSIE ([0-9]+)\./)) {
+        jQuery.browser.msie = true;
+        jQuery.browser.version = RegExp.$1;
+    }
+})();
+
+
+
+
+});
+
+
+
+	
+</script>

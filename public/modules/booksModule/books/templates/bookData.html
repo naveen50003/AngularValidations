@@ -1,0 +1,21 @@
+<cigyan-banner banner-title='The ultimate Books Library' banner-message='Find something new to learn about today using Books'></cigyan-banner>
+<div class="eachBook">
+	<div class="bookDetails">
+		<div class="bookCover">
+			<img class="bookName bookImage" ng-src={{bookDes.cover}} />
+		</div>
+		<div class="bookDescription">
+				<h1>{{bookDes.title}}</h1>
+				<span class="editDeleteImages">
+					<a href ui-sref="editBook({shareId:bookDes._id, type:'book'})"><img src="./images/edit.png" alt=""></a>
+					<a ng-click="deleteTask(bookDes._id)"><img src="./images/delete.jpg" alt=""></a>	
+				</span>
+				<div class="clear"></div>
+
+			<p><label>Author : </label><span>{{bookDes.author}}</span></p>
+			<p><label>Genre : </label><span>{{bookDes.genre}}<span></p>
+			<p><label>Description : </label><span>{{bookDes.description}}</span></p>
+		</div>
+		<div class="clear"></div>
+	</div>
+</div>

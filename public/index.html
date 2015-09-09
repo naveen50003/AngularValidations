@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html  data-ng-app='mainApp' ng-controller="navbarController">
+<head>
+	<title>CI GYAN TV{{$state.current.data.pageTitle}}</title>
+
+    <link rel="stylesheet" href="lib/fullcalendar.css">
+
+    <link rel="stylesheet" href="lib/ng-table.css">
+    <link rel="stylesheet" href="styles/calendarDemo.css" />
+	<link rel="stylesheet"type="text/css" href="styles/style.css" />
+	<link href='http://fonts.googleapis.com/css?family=Ruda:400,700,900' rel='stylesheet' type='text/css'>
+	<link rel="shortcut icon" type="text/css" href="images/cognizant-logo.png">
+	<link rel="stylesheet" href="http://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css" />
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+</head>
+<body  >
+<div id="wrapper">
+	<section ui-view>
+
+	</section>
+	<footer>
+		<p>Copyrights &copy;2015 CI Gyan TV.</p>
+	</footer>
+</div>
+</body>
+
+<script type="text/javascript" src="lib/jquery.js"></script>
+<script type="text/javascript" src="lib/jqueryUI.js"></script>
+
+<script src="lib/angular.js"></script>
+<script src="lib/angular-ui-router.js"></script>
+ <script src="lib/ngStorage.js"></script>
+<script src="lib/ng-table.js"></script>
+
+<script src='modules/booksModule/books/books.js'></script>
+<script src="modules/booksModule/books/booksServices.js" ></script>
+<script src="modules/booksModule/books/booksController.js" ></script>
+<script src="modules/booksModule/books/deleteBooksFactory.js" ></script>
+
+<script src="modules/booksModule/morebooks/morebooksController.js" ></script>
+<script src="modules/booksModule/morebooks/morebooksFilter.js"></script>
+
+<script type="text/javascript" src="modules/booksModule/addbook/addBookController.js"></script>
+<script type="text/javascript" src="modules/booksModule/addbook/addBookDirective.js"></script>
+<script type="text/javascript" src="modules/booksModule/addbook/addBookService.js"></script>
+
+
+<script src="modules/login/login.js"></script>
+<script src="modules/login/loginController.js"></script>
+<script src="modules/login/loginServices.js"></script>
+<script src="modules/home/home.js"></script>
+
+<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.0-rc.3/angular-resource.min.js"></script>
+
+<!-- <script src="modules/header/toggleMenu.js" ></script> -->
+<script src="modules/header/headerDirective.js" ></script>
+<script src="modules/header/bannerDirective.js" ></script>
+
+<script src="modules/pagination/paginationDirective.js" ></script>
+
+<script src='modules/videosModule/videos/videos.js'></script>
+<script src="modules/videosModule/videos/videosServices.js" ></script>
+<script src="modules/videosModule/videos/videosController.js" ></script>
+<script src="modules/videosModule/videos/videoDirective.js" ></script>
+
+<script src="modules/videosModule/morevideos/moreVideosController.js" ></script>
+<script src="modules/videosModule/addVideo/addvideoController.js" ></script>
+
+<script src="modules/media/mediaGrid.js" ></script>
+
+<script src="lib/ui-bootstrap-tpls.js"></script>
+<script src="lib/moment.js"></script>
+<script src="lib/fullcalendar.js"></script>
+<script src="lib/calendar.js"></script>
+
+
+
+<script src='modules/calendarModule/calendar/calendar.js'></script>
+<script src="modules/calendarModule/calendar/calendarServices.js"></script>
+<script src="modules/calendarModule/calendar/calendarController.js"></script>
+
+<script src="modules/calendarModule/tableView/tableView.js"></script>
+<script src="modules/calendarModule/tableView/tableViewServices.js"></script>
+<script src="modules/calendarModule/tableView/tableViewController.js"></script>
+<script src="modules/calendarModule/tableView/tableViewFilter.js"></script>
+
+<script src='modules/calendarModule/sessionsInfo/sessionsController.js'></script>
+<script src='modules/calendarModule/sessionsInfo/sessionsService.js'></script>
+
+<script src="modules/sharedtasks/sharedTask.js"></script>
+<script src="modules/sharedtasks/sharedTaskController.js"></script>
+<script src="modules/sharedtasks/sharedTaskService.js"></script>
+
+
+
+<script src='app.js'></script>
+<script src='controller.js'></script>
+</html>

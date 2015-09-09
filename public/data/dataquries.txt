@@ -1,0 +1,1133 @@
+﻿use cigyantv;
+
+db.createCollections("books");
+
+db.books.insert([
+    {
+      "cover": "images/bookscovers/Krishna Key.jpeg",
+      "title": "The Krishna Key",
+      "author":"Ashwin Sanghi",
+      "genre": "Fiction",
+      "description":"The Krishna Key is an anthropological thriller trying to unfold Krishna & his much awaited Avatar, Kalki in the process and a murder mystery that is able to keep you engrossed till the very end with some contrived, forced and preachy dialogues. Right from the first page, you start comparing with Da vinchi code, then by JK Rowling’s as Taarak Vakil’s name description is unveiled to you and in the end you won’t hesitate to think about Coelho’s writing be it, The Alchemist, Brida or the Zahir.",
+      "Contributor": "Vinod Sharma",
+      "status": false,
+      "IssuedTo": "Upender"
+    },
+    {
+      "cover": "images/bookscovers/notwithoutmydaughter.jpg",
+      "title": "Not Without My Daughter",
+      "author":"Betty Mahmoodi",
+      "genre": "Tragedy",
+      "description":"In August 1984, Michigan housewife Betty Mahmoody accompanied her husband to his native Iran for a two-week vacation. To her horror, she found herself and her four-year-old daughter, Mahtob, virtual prisoners of a man rededicated to his Shiite Moslem faith, in a land where women are near-slaves and Americans are despised. Their only hope for escape lay in a dangerous underground that would not take her child...",
+      "Contributor": "Vinod Sharma",
+      "status": true
+    },
+    {
+      "cover": "images/bookscovers/Chanakya's Chant.jpeg",
+      "title": "Chanakya's Chant",
+      "author":"Ashwin Sanghi",
+      "genre": "Devotional",
+      "description":"The year is 340 BC. A hunted, haunted Brahmin youth vows revenge for the gruesome murder of his beloved father. Cold, calculating, cruel and armed with a complete absence of accepted morals, he becomes the most powerful political strategist in Bharat and succeeds in uniting a ragged country against the invasion of the army of that demigod, Alexander the Great. Pitting the weak edges of both forces against each other, he pulls off a wicked and astonishing victory and succeeds in installing Chandragupta on the throne of the mighty Mauryan empire. History knows him as the brilliant strategist Chanakya. Satisfied and a little bored by his success as a kingmaker, through the simple summoning of his gifted mind, he recedes into the shadows to write his Arthashastra, the science of wealth .",
+      "Contributor": "Vinod Sharma",
+      "status": true
+    },
+    {
+      "cover": "images/bookscovers/The Rozabal Line.jpg",
+      "title": "The Rozabal Line",
+      "author":"Ashwin Sanghi",
+      "genre": "Devotional",
+      "description":"On a lazy day in London, a cardboard box is found on a shelf of the SOAS library where a copy of Mahabharata should have been. When the mystified librarian opens it, she screams before she falls unconscious to the floor. An elite group calling itself the Lashkar-e-Talatashar, the army of thirteen, has scattered around the globe. The fate of its members curiously resembles that of Christ and his Apostles in the first century AD. Their leader is not even a blip on the radar of intelligence agencies, yet their agenda is Armageddon.",
+      "Contributor": "Vinod Sharma",
+      "status": false,
+      "IssuedTo": "Ambati Rama"
+    },
+    {
+      "cover": "images/bookscovers/The Day I Stopped Drinking Milk.jpg",
+      "title": "The Day I Stopped Drinking Milk",
+      "author":"Sudha Murthy",
+      "genre": "Fiction",
+      "description":"Over the years, Sudha Murty has come across some fascinating people whose lives make for interesting stories and have astonishing lessons to reveal. Take Vishnu, who achieves every material success but never knows happiness; or Venkat, who talks so much that he has no time to listen. In other stories, a young girl goes on a train journey that changes her life forever; an impoverished village woman provides bathing water to hundreds of people in a drought-stricken area; a do-gooder ghost decides to teach a disconsolate young man Sanskrit; and in the title story, a woman in a flooded village in Odisha teaches the author a life lesson she will never forget.",
+      "Contributor": "Vinod Sharma",
+      "status": false,
+      "IssuedTo": "Visalakshmi"
+    },
+    {
+      "cover": "images/bookscovers/Train to Pakisthan.jpg",
+      "title": "Train to Pakistan",
+      "author":"Khushwant Singh",
+      "genre": "Thriller",
+      "description":"When gangsters from outside murder the moneylender of Mano Majra, the police arrest Juggut, the local gangster, and Iqbal, an overseas-educated communist agitator who has just arrived in the village. The two of them are hauled off to prison in the neighbouring town, where inspector Hukum Chand is visiting.",
+      "Contributor": "Vinod Sharma",
+      "status": false,
+      "IssuedTo": "Kanchwala,Huzefa"
+    },
+    {
+      "cover": "images/bookscovers/Revolution 2020.jpg",
+      "title": "Revolution 2020",
+      "author":"Chetan Bhagat",
+      "genre": "Thriller",
+      "description":"Revolution 2020 is Chetan Bhagat’s fifth book and most criticized book .The story has the usual and his own way of handling social stuffs and this time it is Corruption. Chetan Bhagat visits GangaTech College in Varanasi to deliver a speech. There, he meets Gopal, the 26-year-old protagonist who has achieved great success in life surrounding himself with lots of money and yet has an unhappy life .The same day, Gopal invites Bhagat for a drink which Bhagat agrees. After an overdose of alcohol Gopal is been admitted in the hospital and this is where he shares his own past with Bhagat.",
+      "Contributor": "Vinod Sharma",
+      "status": true
+    },
+    {
+      "cover": "images/bookscovers/Mastering Angular JS.jpg",
+      "title": "Mastering Web Application Development with AngularJS",
+      "author":"Pawel Kozlowski",
+      "genre": "WebServices",
+      "description":"This book is written by two awesome Angular.js developers, Pawel Kozlowski and Peter Bacon Darwin. They did an amazing job explaining all the best practices to learn Angular.js. The first chapter is just an overview of what Angular.js is which just tries to sell Angular.js to you. It explains a little bit all the pieces that compose Angular.js.",
+      "Contributor": "Suman Mishra",
+      "status": true
+    },
+    {
+      "cover": "images/bookscovers/Looming Towers.jpg",
+      "title": "Looming Towers",
+      "author":"Lawrence Wright",
+      "genre": "Fiction",
+      "description":"A gripping narrative that spans five decades, The Looming Tower explains in unprecedented detail the growth of Islamic fundamentalism, the rise of al-Qaeda, and the intelligence failures that culminated in the attacks on the World Trade Center. Lawrence Wright re-creates firsthand the transformation of Osama bin Laden and Ayman al-Zawahiri from incompetent and idealistic soldiers in Afghanistan to leaders of the most successful terrorist group in history.",
+      "Contributor": "Suman Mishra",
+      "status": true
+    },
+    {
+      "cover": "images/bookscovers/NodeJS In Action.jpg",
+      "title": "NodeJS In Action",
+      "author":"Mike Cantelon",
+      "genre": "NodeJS",
+      "description":"Node.js in Action is an example-driven tutorial that starts at square one and guides you through all the features, techniques, and concepts you'll need to build production-quality Node applications. You'll start by learning how to set up your Node development environment, including loading the community-created extensions. Next, you'll run several simple demonstration programs where you'll learn the basics of a few common types of Node applications.",
+      "Contributor": "Suman Mishra",
+      "status": true
+    },
+    {
+      "cover": "images/bookscovers/The Monochrome Madonna.jpg",
+      "title": "The Monochrome Madonna",
+      "author":"Kalpana Swaminathan",
+      "genre": "Fiction",
+      "description":"If you love History and Contemporary Fiction, then this book is ideal for you. The  two subjects are poles apart and, to combine them and make the outcome interesting is a mountainous task. But, Ashwin Sanghi makes it look effortless and does a perfect job.",
+      "Contributor": "Pulak",
+      "status": true
+    },
+    {
+      "cover": "images/bookscovers/The Colour of LAW.jpg",
+      "title": "The Colour of LAW",
+      "author":"Mark Gimenez",
+      "genre": "Fiction",
+      "description":"If you love History and Contemporary Fiction, then this book is ideal for you. The  two subjects are poles apart and, to combine them and make the outcome interesting is a mountainous task. But, Ashwin Sanghi makes it look effortless and does a perfect job.",
+      "Contributor": "Pulak",
+      "status": true
+    },
+    {
+      "cover": "images/bookscovers/PS I love you.jpg",
+      "title": "PS I love you",
+      "author":"Cecelia Ahern",
+      "genre": "Fiction",
+      "description":"If you love History and Contemporary Fiction, then this book is ideal for you. The  two subjects are poles apart and, to combine them and make the outcome interesting is a mountainous task. But, Ashwin Sanghi makes it look effortless and does a perfect job.",
+      "Contributor": "Pulak",
+      "status": true
+    },
+    {
+      "cover": "images/bookscovers/Visual C++.jpg",
+      "title": "Visual C++",
+      "author":"Ivor Horton",
+      "genre": "C++",
+      "description":"If you love History and Contemporary Fiction, then this book is ideal for you. The  two subjects are poles apart and, to combine them and make the outcome interesting is a mountainous task. But, Ashwin Sanghi makes it look effortless and does a perfect job.",
+      "Contributor": "Meharoon",
+      "status": true
+    },
+    {
+      "cover": "images/bookscovers/One Night call center.jpg",
+      "title": "One Night @ call center",
+      "author":"Chetan Bhagat",
+      "genre": "Fiction",
+      "description":"If you love History and Contemporary Fiction, then this book is ideal for you. The  two subjects are poles apart and, to combine them and make the outcome interesting is a mountainous task. But, Ashwin Sanghi makes it look effortless and does a perfect job.",
+      "Contributor": "Meharoon",
+      "status": true
+    },
+    {
+      "cover": "images/bookscovers/The Lost Symbol.jpg",
+      "title": "The Lost Symbol",
+      "author":"Dan Brown",
+      "genre": "Fiction",
+      "description":"If you love History and Contemporary Fiction, then this book is ideal for you. The  two subjects are poles apart and, to combine them and make the outcome interesting is a mountainous task. But, Ashwin Sanghi makes it look effortless and does a perfect job.",
+      "Contributor": "Ambati Rama",
+      "status": true
+    },
+    {
+      "cover": "images/bookscovers/The Client,The Street Lawyer.jpg",
+      "title": "The Client,The Street Lawyer",
+      "author":"John Grisham",
+      "genre": "Fiction",
+      "description":"If you love History and Contemporary Fiction, then this book is ideal for you. The  two subjects are poles apart and, to combine them and make the outcome interesting is a mountainous task. But, Ashwin Sanghi makes it look effortless and does a perfect job.",
+      "Contributor": "Ambati Rama",
+      "status": true
+    },
+    {
+      "cover": "images/bookscovers/Paths of Glory.jpg",
+      "title": "Paths of Glory",
+      "author":"Jeffrey Archery",
+      "genre": "Fiction",
+      "description":"If you love History and Contemporary Fiction, then this book is ideal for you. The  two subjects are poles apart and, to combine them and make the outcome interesting is a mountainous task. But, Ashwin Sanghi makes it look effortless and does a perfect job.",
+      "Contributor": "Ambati Rama",
+      "status": true
+    },
+    {
+      "cover": "images/bookscovers/Sons of Fortune.jpg",
+      "title": "Sons of Fortune",
+      "author":"Jeffrey Archery",
+      "genre": "Fiction",
+      "description":"If you love History and Contemporary Fiction, then this book is ideal for you. The  two subjects are poles apart and, to combine them and make the outcome interesting is a mountainous task. But, Ashwin Sanghi makes it look effortless and does a perfect job.",
+      "Contributor": "Ambati Rama",
+      "status": true
+    },
+    {
+      "cover": "images/bookscovers/The Partner.jpg",
+      "title": "The Partner",
+      "author":"John Grisham",
+      "genre": "Fiction",
+      "description":"If you love History and Contemporary Fiction, then this book is ideal for you. The  two subjects are poles apart and, to combine them and make the outcome interesting is a mountainous task. But, Ashwin Sanghi makes it look effortless and does a perfect job.",
+      "Contributor": "Ambati Rama",
+      "status": true
+    },
+    {
+      "cover": "images/bookscovers/The Winner Stands Alone.jpg",
+      "title": "The Winner Stands Alone",
+      "author":"Paulo Coelho",
+      "genre": "Fiction",
+      "description":"If you love History and Contemporary Fiction, then this book is ideal for you. The  two subjects are poles apart and, to combine them and make the outcome interesting is a mountainous task. But, Ashwin Sanghi makes it look effortless and does a perfect job.",
+      "Contributor": "Ambati Rama",
+      "status": true
+    },
+    {
+      "cover": "images/bookscovers/Blue HorizonThe Dark of the Sun.jpg",
+      "title": "Blue Horizon/The Dark of the Sun",
+      "author":"Wilbur Smith",
+      "genre": "Fiction",
+      "description":"If you love History and Contemporary Fiction, then this book is ideal for you. The  two subjects are poles apart and, to combine them and make the outcome interesting is a mountainous task. But, Ashwin Sanghi makes it look effortless and does a perfect job.",
+      "Contributor": "Ambati Rama",
+      "status": true
+    },
+    {
+      "cover": "images/bookscovers/The Immortals of Melhua.jpg",
+      "title": "The Immortals of Melhua",
+      "author":"Amish Tripathi",
+      "genre": "Fiction",
+      "description":"The 3 mistakes of my Life (TTMOML) follows the story of Govind Patel, a Mathematician and businessman. With two wonderful best friends; Omi and Ishaan by his side, Govinds aim is to start up his own Cricket and tuition business.",
+      "Contributor": "Ambati Rama",
+      "status": false,
+      "IssuedTo": "Sai Krishna"
+    },
+    {
+      "cover": "images/bookscovers/Strategic Management.jpg",
+      "title": "Strategic Management",
+      "author":"Robert Burgelman",
+      "genre": "Technical",
+      "description":"If you love History and Contemporary Fiction, then this book is ideal for you. The  two subjects are poles apart and, to combine them and make the outcome interesting is a mountainous task. But, Ashwin Sanghi makes it look effortless and does a perfect job.",
+      "Contributor": "Santosh Darurie",
+      "status": true
+    },
+    {
+      "cover": "images/bookscovers/Research Methodology.jpg",
+      "title": "Research Methodology",
+      "author":"Ranjith Kumar",
+      "genre": "Technical",
+      "description":"If you love History and Contemporary Fiction, then this book is ideal for you. The  two subjects are poles apart and, to combine them and make the outcome interesting is a mountainous task. But, Ashwin Sanghi makes it look effortless and does a perfect job.",
+      "Contributor": "Santosh Darurie",
+      "status": true
+    },
+    {
+      "cover": "images/bookscovers/Financial Management.jpg",
+      "title": "Financial Management",
+      "author":"I M Pandey",
+      "genre": "Technical",
+      "description":"If you love History and Contemporary Fiction, then this book is ideal for you. The  two subjects are poles apart and, to combine them and make the outcome interesting is a mountainous task. But, Ashwin Sanghi makes it look effortless and does a perfect job.",
+      "Contributor": "Santosh Darurie",
+      "status": true
+    },
+    {
+      "cover": "images/bookscovers/Human Resource Management.jpg",
+      "title": "Human Resource Management",
+      "author":"Gary Dessler",
+      "genre": "Technical",
+      "description":"If you love History and Contemporary Fiction, then this book is ideal for you. The  two subjects are poles apart and, to combine them and make the outcome interesting is a mountainous task. But, Ashwin Sanghi makes it look effortless and does a perfect job.",
+      "Contributor": "Santosh Darurie",
+      "status": true
+    },
+    {
+      "cover": "images/bookscovers/empty.jpg",
+      "title": "Production/Operations Management Module-1",
+      "author":"",
+      "genre": "Technical",
+      "description":"If you love History and Contemporary Fiction, then this book is ideal for you. The  two subjects are poles apart and, to combine them and make the outcome interesting is a mountainous task. But, Ashwin Sanghi makes it look effortless and does a perfect job.",
+      "Contributor": "Santosh Darurie",
+      "status": true
+    },
+    {
+      "cover": "images/bookscovers/empty.jpg",
+      "title": "Production/Operations Management Module-2",
+      "author":"",
+      "genre": "Technical",
+      "description":"If you love History and Contemporary Fiction, then this book is ideal for you. The  two subjects are poles apart and, to combine them and make the outcome interesting is a mountainous task. But, Ashwin Sanghi makes it look effortless and does a perfect job.",
+      "Contributor": "Santosh Darurie",
+      "status": true
+    },
+    {
+      "cover": "images/bookscovers/empty.jpg",
+      "title": "Operating System Concepts",
+      "author":"",
+      "genre": "Technical",
+      "description":"If you love History and Contemporary Fiction, then this book is ideal for you. The  two subjects are poles apart and, to combine them and make the outcome interesting is a mountainous task. But, Ashwin Sanghi makes it look effortless and does a perfect job.",
+      "Contributor": "Santosh Darurie",
+      "status": true
+    },
+    {
+      "cover": "images/bookscovers/empty.jpg",
+      "title": "Introduction CSS",
+      "author":"",
+      "genre": "Technical",
+      "description":"If you love History and Contemporary Fiction, then this book is ideal for you. The  two subjects are poles apart and, to combine them and make the outcome interesting is a mountainous task. But, Ashwin Sanghi makes it look effortless and does a perfect job.",
+      "Contributor": "Santosh Darurie",
+      "status": true
+    },
+    {
+      "cover": "images/bookscovers/empty.jpg",
+      "title": "Principles Of Digital Computer Operation",
+      "author":"",
+      "genre": "Technical",
+      "description":"If you love History and Contemporary Fiction, then this book is ideal for you. The  two subjects are poles apart and, to combine them and make the outcome interesting is a mountainous task. But, Ashwin Sanghi makes it look effortless and does a perfect job.",
+      "Contributor": "Santosh Darurie",
+      "status": true
+    },
+    {
+      "cover": "images/bookscovers/empty.jpg",
+      "title": "WEB Technology",
+      "author":"",
+      "genre": "Technical",
+      "description":"If you love History and Contemporary Fiction, then this book is ideal for you. The  two subjects are poles apart and, to combine them and make the outcome interesting is a mountainous task. But, Ashwin Sanghi makes it look effortless and does a perfect job.",
+      "Contributor": "Santosh Darurie",
+      "status": true
+    },
+    {
+      "cover": "images/bookscovers/empty.jpg",
+      "title": "Business Research Methods",
+      "author":"",
+      "genre": "Technical",
+      "description":"If you love History and Contemporary Fiction, then this book is ideal for you. The  two subjects are poles apart and, to combine them and make the outcome interesting is a mountainous task. But, Ashwin Sanghi makes it look effortless and does a perfect job.",
+      "Contributor": "Santosh Darurie",
+      "status": true
+    },
+    {
+      "cover": "images/bookscovers/empty.jpg",
+      "title": "Conscires Agile Practices",
+      "author":"",
+      "genre": "Technical",
+      "description":"If you love History and Contemporary Fiction, then this book is ideal for you. The  two subjects are poles apart and, to combine them and make the outcome interesting is a mountainous task. But, Ashwin Sanghi makes it look effortless and does a perfect job.",
+      "Contributor": "Santosh Darurie",
+      "status": true
+    },
+    {
+      "cover": "images/bookscovers/Data Structures Using Pascal.jpg",
+      "title": "Data Structures Using Pascal",
+      "author":"",
+      "genre": "Technical",
+      "description":"If you love History and Contemporary Fiction, then this book is ideal for you. The  two subjects are poles apart and, to combine them and make the outcome interesting is a mountainous task. But, Ashwin Sanghi makes it look effortless and does a perfect job.",
+      "Contributor": "Santosh Darurie",
+      "status": true
+    },
+    {
+      "cover": "images/bookscovers/empty.jpg",
+      "title": "Introduction T0 Digital And Data Communications",
+      "author":"",
+      "genre": "Technical",
+      "description":"If you love History and Contemporary Fiction, then this book is ideal for you. The  two subjects are poles apart and, to combine them and make the outcome interesting is a mountainous task. But, Ashwin Sanghi makes it look effortless and does a perfect job.",
+      "Contributor": "Santosh Darurie",
+      "status": true
+    },
+    {
+      "cover": "images/bookscovers/empty.jpg",
+      "title": "Time Management",
+      "author":"",
+      "genre": "Technical",
+      "description":"If you love History and Contemporary Fiction, then this book is ideal for you. The  two subjects are poles apart and, to combine them and make the outcome interesting is a mountainous task. But, Ashwin Sanghi makes it look effortless and does a perfect job.",
+      "Contributor": "Santosh Darurie",
+      "status": true
+    },
+    {
+      "cover": "images/bookscovers/empty.jpg",
+      "title": "UNIX power Tools Sed and Awk",
+      "author":"",
+      "genre": "Technical",
+      "description":"If you love History and Contemporary Fiction, then this book is ideal for you. The  two subjects are poles apart and, to combine them and make the outcome interesting is a mountainous task. But, Ashwin Sanghi makes it look effortless and does a perfect job.",
+      "Contributor": "Santosh Darurie",
+      "status": true
+    },
+    {
+      "cover": "images/bookscovers/empty.jpg",
+      "title": "MFC With Visual C++6",
+      "author":"",
+      "genre": "Technical",
+      "description":"If you love History and Contemporary Fiction, then this book is ideal for you. The  two subjects are poles apart and, to combine them and make the outcome interesting is a mountainous task. But, Ashwin Sanghi makes it look effortless and does a perfect job.",
+      "Contributor": "Santosh Darurie",
+      "status": true
+    },
+    {
+      "cover": "images/bookscovers/empty.jpg",
+      "title": "UML In 24Hours",
+      "author":"",
+      "genre": "Technical",
+      "description":"If you love History and Contemporary Fiction, then this book is ideal for you. The  two subjects are poles apart and, to combine them and make the outcome interesting is a mountainous task. But, Ashwin Sanghi makes it look effortless and does a perfect job.",
+      "Contributor": "Santosh Darurie",
+      "status": true
+    },
+    {
+      "cover": "images/bookscovers/empty.jpg",
+      "title": "Statistics For Management",
+      "author":"",
+      "genre": "Technical",
+      "description":"If you love History and Contemporary Fiction, then this book is ideal for you. The  two subjects are poles apart and, to combine them and make the outcome interesting is a mountainous task. But, Ashwin Sanghi makes it look effortless and does a perfect job.",
+      "Contributor": "Santosh Darurie",
+      "status": true
+    },
+    {
+      "cover": "images/bookscovers/empty.jpg",
+      "title": "PERL In A NutShell",
+      "author":"",
+      "genre": "Technical",
+      "description":"If you love History and Contemporary Fiction, then this book is ideal for you. The  two subjects are poles apart and, to combine them and make the outcome interesting is a mountainous task. But, Ashwin Sanghi makes it look effortless and does a perfect job.",
+      "Contributor": "Santosh Darurie",
+      "status": true
+    },
+    {
+      "cover": "images/bookscovers/empty.jpg",
+      "title": "English By Mail",
+      "author":"",
+      "genre": "Technical",
+      "description":"If you love History and Contemporary Fiction, then this book is ideal for you. The  two subjects are poles apart and, to combine them and make the outcome interesting is a mountainous task. But, Ashwin Sanghi makes it look effortless and does a perfect job.",
+      "Contributor": "Santosh Darurie",
+      "status": true
+    },
+    {
+      "cover": "images/bookscovers/empty.jpg",
+      "title": "Business Communication",
+      "author":"",
+      "genre": "Technical",
+      "description":"If you love History and Contemporary Fiction, then this book is ideal for you. The  two subjects are poles apart and, to combine them and make the outcome interesting is a mountainous task. But, Ashwin Sanghi makes it look effortless and does a perfect job.",
+      "Contributor": "Santosh Darurie",
+      "status": true
+    },
+    {
+      "cover": "images/bookscovers/empty.jpg",
+      "title": "Organisational Behaviour",
+      "author":"",
+      "genre": "Technical",
+      "description":"If you love History and Contemporary Fiction, then this book is ideal for you. The  two subjects are poles apart and, to combine them and make the outcome interesting is a mountainous task. But, Ashwin Sanghi makes it look effortless and does a perfect job.",
+      "Contributor": "Santosh Darurie",
+      "status": true
+    },
+    {
+      "cover": "images/bookscovers/empty.jpg",
+      "title": "XML And JAVA Developing Web Applications",
+      "author":"",
+      "genre": "Technical",
+      "description":"If you love History and Contemporary Fiction, then this book is ideal for you. The  two subjects are poles apart and, to combine them and make the outcome interesting is a mountainous task. But, Ashwin Sanghi makes it look effortless and does a perfect job.",
+      "Contributor": "Santosh Darurie",
+      "status": true
+    },
+    {
+      "cover": "images/bookscovers/PHPThe Complete Reference.jpg",
+      "title": "PHP:The Complete Reference",
+      "author":"Steven Holzner",
+      "genre": "Technical",
+      "description":"If you love History and Contemporary Fiction, then this book is ideal for you. The  two subjects are poles apart and, to combine them and make the outcome interesting is a mountainous task. But, Ashwin Sanghi makes it look effortless and does a perfect job.",
+      "Contributor": "Santosh Darurie",
+      "status": true
+    },
+    {
+      "cover": "images/bookscovers/empty.jpg",
+      "title": "TNI's Popular Riddles",
+      "author":"",
+      "genre": "Technical",
+      "description":"If you love History and Contemporary Fiction, then this book is ideal for you. The  two subjects are poles apart and, to combine them and make the outcome interesting is a mountainous task. But, Ashwin Sanghi makes it look effortless and does a perfect job.",
+      "Contributor": "Santosh Darurie",
+      "status": true
+    },
+    {
+      "cover": "images/bookscovers/empty.jpg",
+      "title": "WE-How To Increase Performance And Profits Through Full Engagement",
+      "author":"",
+      "genre": "Technical",
+      "description":"If you love History and Contemporary Fiction, then this book is ideal for you. The  two subjects are poles apart and, to combine them and make the outcome interesting is a mountainous task. But, Ashwin Sanghi makes it look effortless and does a perfect job.",
+      "Contributor": "Santosh Darurie",
+      "status": true
+    },
+    {
+      "cover": "images/bookscovers/The Power Of Your Subconscious Mind.jpg",
+      "title": "The Power Of Your Subconscious Mind",
+      "author":"Joseph Murphy",
+      "genre": "Technical",
+      "description":"If you love History and Contemporary Fiction, then this book is ideal for you. The  two subjects are poles apart and, to combine them and make the outcome interesting is a mountainous task. But, Ashwin Sanghi makes it look effortless and does a perfect job.",
+      "Contributor": "Santosh Darurie",
+      "status": true
+    },
+    {
+      "cover": "images/bookscovers/empty.jpg",
+      "title": "OUTLOOK Traveller-The Very Best Of Travel",
+      "author":"",
+      "genre": "Technical",
+      "description":"If you love History and Contemporary Fiction, then this book is ideal for you. The  two subjects are poles apart and, to combine them and make the outcome interesting is a mountainous task. But, Ashwin Sanghi makes it look effortless and does a perfect job.",
+      "Contributor": "Santosh Darurie",
+      "status": true
+    },
+    {
+      "cover": "images/bookscovers/Bhagavad-GITA AS IT IS.jpg",
+      "title": "Bhagavad-GITA AS IT IS",
+      "author":"Bhaktivedanta",
+      "genre": "Devotional",
+      "description":"If you love History and Contemporary Fiction, then this book is ideal for you. The  two subjects are poles apart and, to combine them and make the outcome interesting is a mountainous task. But, Ashwin Sanghi makes it look effortless and does a perfect job.",
+      "Contributor": "Santosh Darurie",
+      "status": true
+    },
+    {
+      "cover": "images/bookscovers/empty.jpg",
+      "title": "Management Information System",
+      "author":"",
+      "genre": "Technical",
+      "description":"If you love History and Contemporary Fiction, then this book is ideal for you. The  two subjects are poles apart and, to combine them and make the outcome interesting is a mountainous task. But, Ashwin Sanghi makes it look effortless and does a perfect job.",
+      "Contributor": "Santosh Darurie",
+      "status": true
+    },
+    {
+      "cover": "images/bookscovers/empty.jpg",
+      "title": "Marketing Management",
+      "author":"",
+      "genre": "Technical",
+      "description":"If you love History and Contemporary Fiction, then this book is ideal for you. The  two subjects are poles apart and, to combine them and make the outcome interesting is a mountainous task. But, Ashwin Sanghi makes it look effortless and does a perfect job.",
+      "Contributor": "Santosh Darurie",
+      "status": true
+    },
+    {
+      "cover": "images/bookscovers/empty.jpg",
+      "title": "స్వామీ వివేకానంద - సమగ్ర, సప్రామనిక జీవిత గాధ 1 ",
+      "author":"",
+      "genre": "Inspirational",
+      "description":"If you love History and Contemporary Fiction, then this book is ideal for you. The  two subjects are poles apart and, to combine them and make the outcome interesting is a mountainous task. But, Ashwin Sanghi makes it look effortless and does a perfect job.",
+      "Contributor": "Santosh Darurie",
+      "status": true
+    },
+    {
+      "cover": "images/bookscovers/empty.jpg",
+      "title": "స్వామీ వివేకానంద - సమగ్ర, సప్రామనిక జీవిత గాధ 2",
+      "author":"",
+      "genre": "Inspirational",
+      "description":"If you love History and Contemporary Fiction, then this book is ideal for you. The  two subjects are poles apart and, to combine them and make the outcome interesting is a mountainous task. But, Ashwin Sanghi makes it look effortless and does a perfect job.",
+      "Contributor": "Santosh Darurie",
+      "status": true
+    },
+    {
+      "cover": "images/bookscovers/empty.jpg",
+      "title": "To The Brave Youth",
+      "author":"",
+      "genre": "Inspirational",
+      "description":"If you love History and Contemporary Fiction, then this book is ideal for you. The  two subjects are poles apart and, to combine them and make the outcome interesting is a mountainous task. But, Ashwin Sanghi makes it look effortless and does a perfect job.",
+      "Contributor": "Santosh Darurie",
+      "status": true
+    },
+    {
+      "cover": "images/bookscovers/empty.jpg",
+      "title": "జనరల్ సైన్స్  Group-1,II",
+      "author":"",
+      "genre": "Inspirational",
+      "description":"If you love History and Contemporary Fiction, then this book is ideal for you. The  two subjects are poles apart and, to combine them and make the outcome interesting is a mountainous task. But, Ashwin Sanghi makes it look effortless and does a perfect job.",
+      "Contributor": "Santosh Darurie",
+      "status": true
+    },
+    {
+      "cover": "images/bookscovers/empty.jpg",
+      "title": "శ్రీ రామకృష్ణ పరమహంస   - సమగ్ర, సప్రామనిక జీవిత గాధ 1 ",
+      "author":"",
+      "genre": "Inspirational",
+      "description":"If you love History and Contemporary Fiction, then this book is ideal for you. The  two subjects are poles apart and, to combine them and make the outcome interesting is a mountainous task. But, Ashwin Sanghi makes it look effortless and does a perfect job.",
+      "Contributor": "Santosh Darurie",
+      "status": true
+    },
+    {
+      "cover": "images/bookscovers/empty.jpg",
+      "title": "శ్రీ రామకృష్ణ పరమహంస  - సమగ్ర, సప్రామనిక జీవిత గాధ 2",
+      "author":"",
+      "genre": "Inspirational",
+      "description":"If you love History and Contemporary Fiction, then this book is ideal for you. The  two subjects are poles apart and, to combine them and make the outcome interesting is a mountainous task. But, Ashwin Sanghi makes it look effortless and does a perfect job.",
+      "Contributor": "Santosh Darurie",
+      "status": true
+    },
+    {
+      "cover": "images/bookscovers/empty.jpg",
+      "title": "గేయరూప కవిత్వం - గోరటి వెంకన్న - అల సేంద్రవంక ",
+      "author":"",
+      "genre": "Poetry",
+      "description":"If you love History and Contemporary Fiction, then this book is ideal for you. The  two subjects are poles apart and, to combine them and make the outcome interesting is a mountainous task. But, Ashwin Sanghi makes it look effortless and does a perfect job.",
+      "Contributor": "Santosh Darurie",
+      "status": true
+    },
+    {
+      "cover": "images/bookscovers/sivasatyalu.jpg",
+      "title": "జరుక్ శాస్త్రి పేరడీలు",
+      "author":"",
+      "genre": "Poetry",
+      "description":"If you love History and Contemporary Fiction, then this book is ideal for you. The  two subjects are poles apart and, to combine them and make the outcome interesting is a mountainous task. But, Ashwin Sanghi makes it look effortless and does a perfect job.",
+      "Contributor": "Santosh Darurie",
+      "status": true
+    },
+    {
+      "cover": "images/bookscovers/empty.jpg",
+      "title": "పిపాసి",
+      "author":"",
+      "genre": "Poetry",
+      "description":"If you love History and Contemporary Fiction, then this book is ideal for you. The  two subjects are poles apart and, to combine them and make the outcome interesting is a mountainous task. But, Ashwin Sanghi makes it look effortless and does a perfect job.",
+      "Contributor": "Santosh Darurie",
+      "status": true
+    },
+    {
+      "cover": "images/bookscovers/empty.jpg",
+      "title": "ప్రవాహించే  ఉత్తేజం-చే గే వరా ",
+      "author":"",
+      "genre": "Inspirational",
+      "description":"If you love History and Contemporary Fiction, then this book is ideal for you. The  two subjects are poles apart and, to combine them and make the outcome interesting is a mountainous task. But, Ashwin Sanghi makes it look effortless and does a perfect job.",
+      "Contributor": "Santosh Darurie",
+      "status": true
+    },
+    {
+      "cover": "images/bookscovers/sivasatyalu.jpg",
+      "title": "ఆటగదరా శివా!!-శివతత్వాలు",
+      "author":"",
+      "genre": "Devotional",
+      "description":"If you love History and Contemporary Fiction, then this book is ideal for you. The  two subjects are poles apart and, to combine them and make the outcome interesting is a mountainous task. But, Ashwin Sanghi makes it look effortless and does a perfect job.",
+      "Contributor": "Santosh Darurie",
+      "status": true
+    },
+    {
+      "cover": "images/bookscovers/empty.jpg",
+      "title": "సాహితీ వైభవమ్",
+      "author":"",
+      "genre": "Poetry",
+      "description":"If you love History and Contemporary Fiction, then this book is ideal for you. The  two subjects are poles apart and, to combine them and make the outcome interesting is a mountainous task. But, Ashwin Sanghi makes it look effortless and does a perfect job.",
+      "Contributor": "Santosh Darurie",
+      "status": true
+    },
+    {
+      "cover": "images/bookscovers/empty.jpg",
+      "title": "సనాతనధర్మం",
+      "author":"",
+      "genre": "Poetry",
+      "description":"If you love History and Contemporary Fiction, then this book is ideal for you. The  two subjects are poles apart and, to combine them and make the outcome interesting is a mountainous task. But, Ashwin Sanghi makes it look effortless and does a perfect job.",
+      "Contributor": "Santosh Darurie",
+      "status": true
+    },
+    {
+      "cover": "images/bookscovers/empty.jpg",
+      "title": "ఈనాటి మాట ఆనాటి మాట",
+      "author":"",
+      "genre": "Inspirational",
+      "description":"If you love History and Contemporary Fiction, then this book is ideal for you. The  two subjects are poles apart and, to combine them and make the outcome interesting is a mountainous task. But, Ashwin Sanghi makes it look effortless and does a perfect job.",
+      "Contributor": "Santosh Darurie",
+      "status": true
+    },
+    {
+      "cover": "images/bookscovers/empty.jpg",
+      "title": "వాల్మీకం ",
+      "author":"",
+      "genre": "Inspirational",
+      "description":"If you love History and Contemporary Fiction, then this book is ideal for you. The  two subjects are poles apart and, to combine them and make the outcome interesting is a mountainous task. But, Ashwin Sanghi makes it look effortless and does a perfect job.",
+      "Contributor": "Santosh Darurie",
+      "status": true
+    },
+    {
+      "cover": "images/bookscovers/Raja Yoga.jpg",
+      "title": "Raja Yoga",
+      "author":"Swami Vivekananda",
+      "genre": "Inspirational",
+      "description":"If you love History and Contemporary Fiction, then this book is ideal for you. The  two subjects are poles apart and, to combine them and make the outcome interesting is a mountainous task. But, Ashwin Sanghi makes it look effortless and does a perfect job.",
+      "Contributor": "Santosh Darurie",
+      "status": true
+    },
+    {
+      "cover": "images/bookscovers/popularrachanalu.jpg",
+      "title": "పాపులర్ రచనలు చేయడం ఎలా?",
+      "author":"Yandamuri Veerendranath",
+      "genre": "Literature",
+      "description":"If you love History and Contemporary Fiction, then this book is ideal for you. The  two subjects are poles apart and, to combine them and make the outcome interesting is a mountainous task. But, Ashwin Sanghi makes it look effortless and does a perfect job.",
+      "Contributor": "Santosh Darurie",
+      "status": true
+    },
+    {
+      "cover": "images/bookscovers/Mind According to Vedanta.jpg",
+      "title": "Mind According to Vedanta",
+      "author":"Swami Satyaprakashananda",
+      "genre": "Inspirational",
+      "description":"If you love History and Contemporary Fiction, then this book is ideal for you. The  two subjects are poles apart and, to combine them and make the outcome interesting is a mountainous task. But, Ashwin Sanghi makes it look effortless and does a perfect job.",
+      "Contributor": "Santosh Darurie",
+      "status": true
+    },
+    {
+      "cover": "images/bookscovers/empty.jpg",
+      "title": "స్వామి వివేకానంద:జీవితం మహత్కార్యం",
+      "author":"",
+      "genre": "Inspirational",
+      "description":"If you love History and Contemporary Fiction, then this book is ideal for you. The  two subjects are poles apart and, to combine them and make the outcome interesting is a mountainous task. But, Ashwin Sanghi makes it look effortless and does a perfect job.",
+      "Contributor": "Santosh Darurie",
+      "status": true
+    },
+    {
+      "cover": "images/bookscovers/enkypatalu.jpg",
+      "title": "ఎంకి పాటలు",
+      "author":"Nanduri Venkata Subba Rao",
+      "genre": "Poetry",
+      "description":"If you love History and Contemporary Fiction, then this book is ideal for you. The  two subjects are poles apart and, to combine them and make the outcome interesting is a mountainous task. But, Ashwin Sanghi makes it look effortless and does a perfect job.",
+      "Contributor": "Santosh Darurie",
+      "status": true
+    },
+    {
+      "cover": "images/bookscovers/empty.jpg",
+      "title": "అడివి  బాపిరాజు",
+      "author":"",
+      "genre": "Biography",
+      "description":"If you love History and Contemporary Fiction, then this book is ideal for you. The  two subjects are poles apart and, to combine them and make the outcome interesting is a mountainous task. But, Ashwin Sanghi makes it look effortless and does a perfect job.",
+      "Contributor": "Santosh Darurie",
+      "status": true
+    },
+    {
+      "cover": "images/bookscovers/empty.jpg",
+      "title": "శ్రీ శ్రీ సిప్రాలి",
+      "author":"",
+      "genre": "poetry",
+      "description":"If you love History and Contemporary Fiction, then this book is ideal for you. The  two subjects are poles apart and, to combine them and make the outcome interesting is a mountainous task. But, Ashwin Sanghi makes it look effortless and does a perfect job.",
+      "Contributor": "Santosh Darurie",
+      "status": true
+    },
+    {
+      "cover": "images/bookscovers/empty.jpg",
+      "title": "D.T.P Pagemaker and Photoshop",
+      "author":"",
+      "genre": "Technical",
+      "description":"If you love History and Contemporary Fiction, then this book is ideal for you. The  two subjects are poles apart and, to combine them and make the outcome interesting is a mountainous task. But, Ashwin Sanghi makes it look effortless and does a perfect job.",
+      "Contributor": "Santosh Darurie",
+      "status": true
+    },
+    {
+      "cover": "images/bookscovers/empty.jpg",
+      "title": "డి. టి . పి  పేజ్మేకర్ & ఫోటోషాప్",
+      "author":"",
+      "genre": "Technical",
+      "description":"If you love History and Contemporary Fiction, then this book is ideal for you. The  two subjects are poles apart and, to combine them and make the outcome interesting is a mountainous task. But, Ashwin Sanghi makes it look effortless and does a perfect job.",
+      "Contributor": "Santosh Darurie",
+      "status": true
+    },
+    {
+      "cover": "images/bookscovers/The 80 Minute MBA.jpg",
+      "title": "The 80 Minute MBA",
+      "author":"Richard Reeves",
+      "genre": "Technical",
+      "description":"If you love History and Contemporary Fiction, then this book is ideal for you. The  two subjects are poles apart and, to combine them and make the outcome interesting is a mountainous task. But, Ashwin Sanghi makes it look effortless and does a perfect job.",
+      "Contributor": "Santosh Darurie",
+      "status": true
+    },
+    {
+      "cover": "images/bookscovers/empty.jpg",
+      "title": "Inventions and Discoveries",
+      "author":"",
+      "genre": "Scientific",
+      "description":"If you love History and Contemporary Fiction, then this book is ideal for you. The  two subjects are poles apart and, to combine them and make the outcome interesting is a mountainous task. But, Ashwin Sanghi makes it look effortless and does a perfect job.",
+      "Contributor": "Santosh Darurie",
+      "status": true
+    },
+    {
+      "cover": "images/bookscovers/empty.jpg",
+      "title": "అక్షర తపస్సు",
+      "author":"",
+      "genre": "poetry",
+      "description":"If you love History and Contemporary Fiction, then this book is ideal for you. The  two subjects are poles apart and, to combine them and make the outcome interesting is a mountainous task. But, Ashwin Sanghi makes it look effortless and does a perfect job.",
+      "Contributor": "Santosh Darurie",
+      "status": true
+    },
+    {
+      "cover": "images/bookscovers/empty.jpg",
+      "title": "శ్రీ శ్రీ సాహిత్య సర్వస్వం అనుబంధ సంపుటం",
+      "author":"",
+      "genre": "poetry",
+      "description":"If you love History and Contemporary Fiction, then this book is ideal for you. The  two subjects are poles apart and, to combine them and make the outcome interesting is a mountainous task. But, Ashwin Sanghi makes it look effortless and does a perfect job.",
+      "Contributor": "Santosh Darurie",
+      "status": true
+    },
+    {
+      "cover": "images/bookscovers/empty.jpg",
+      "title": "గీతగోవింద కావ్యము",
+      "author":"",
+      "genre": "poetry",
+      "description":"If you love History and Contemporary Fiction, then this book is ideal for you. The  two subjects are poles apart and, to combine them and make the outcome interesting is a mountainous task. But, Ashwin Sanghi makes it look effortless and does a perfect job.",
+      "Contributor": "Santosh Darurie",
+      "status": true
+    },
+    {
+      "title": "Rule the World-The way I Did",
+      "author":"Shrikant Prasoon",
+      "genre": "Inspirational",
+      "description":"If you love History and Contemporary Fiction, then this book is ideal for you. The  two subjects are poles apart and, to combine them and make the outcome interesting is a mountainous task. But, Ashwin Sanghi makes it look effortless and does a perfect job.",
+      "Contributor": "Santosh Darurie",
+      "status": true
+    },
+    {
+      "cover": "images/bookscovers/empty.jpg",
+      "title": "ఈ విప్లవం అంతరంగంలో",
+      "author":"",
+      "genre": "Philosophy",
+      "description":"If you love History and Contemporary Fiction, then this book is ideal for you. The  two subjects are poles apart and, to combine them and make the outcome interesting is a mountainous task. But, Ashwin Sanghi makes it look effortless and does a perfect job.",
+      "Contributor": "Santosh Darurie",
+      "status": true
+    },
+    {
+      "cover": "images/bookscovers/The Journey of Self Discovery.jpg",
+      "title": "The Journey of Self Discovery",
+      "author":"A C Bhaktivedanta",
+      "genre": "Spiritual",
+      "description":"If you love History and Contemporary Fiction, then this book is ideal for you. The  two subjects are poles apart and, to combine them and make the outcome interesting is a mountainous task. But, Ashwin Sanghi makes it look effortless and does a perfect job.",
+      "Contributor": "Santosh Darurie",
+      "status": true
+    },
+    {
+      "cover": "images/bookscovers/empty.jpg",
+      "title": "కన్యాశుల్కం",
+      "author":"",
+      "genre": "Spiritual",
+      "description":"If you love History and Contemporary Fiction, then this book is ideal for you. The  two subjects are poles apart and, to combine them and make the outcome interesting is a mountainous task. But, Ashwin Sanghi makes it look effortless and does a perfect job.",
+      "Contributor": "Santosh Darurie",
+      "status": true
+    },
+    {
+      "cover": "images/bookscovers/3mistakesofmylife.jpg",
+      "title": "the 3 mistakes of my life",
+      "author":"Chetan Bhagat",
+      "genre": "Novel",
+      "description":"If you love History and Contemporary Fiction, then this book is ideal for you. The  two subjects are poles apart and, to combine them and make the outcome interesting is a mountainous task. But, Ashwin Sanghi makes it look effortless and does a perfect job.",
+      "Contributor": "Santosh Darurie",
+      "status": true
+    },
+    {
+      "cover": "images/bookscovers/empty.jpg",
+      "title": "గీతాంజలి",
+      "author":"",
+      "genre": "General",
+      "description":"If you love History and Contemporary Fiction, then this book is ideal for you. The  two subjects are poles apart and, to combine them and make the outcome interesting is a mountainous task. But, Ashwin Sanghi makes it look effortless and does a perfect job.",
+      "Contributor": "Santosh Darurie",
+      "status": true
+    },
+    {
+      "cover": "images/bookscovers/maidhanam.jpg",
+      "title": "మైదానం",
+      "author":"Chalam",
+      "genre": "Novel",
+      "description":"If you love History and Contemporary Fiction, then this book is ideal for you. The  two subjects are poles apart and, to combine them and make the outcome interesting is a mountainous task. But, Ashwin Sanghi makes it look effortless and does a perfect job.",
+      "Contributor": "Santosh Darurie",
+      "status": true
+    },
+    {
+      "cover": "images/bookscovers/kadgasrusti.jpg",
+      "title": "ఖడ్గసృష్టి",
+      "author":"Shri Shri",
+      "genre": "poetry",
+      "description":"If you love History and Contemporary Fiction, then this book is ideal for you. The  two subjects are poles apart and, to combine them and make the outcome interesting is a mountainous task. But, Ashwin Sanghi makes it look effortless and does a perfect job.",
+      "Contributor": "Santosh Darurie",
+      "status": true
+    },
+    {
+      "cover": "images/bookscovers/Secret the power.jpg",
+      "title": "Secret the power",
+      "author":"Rhonda Byrne",
+      "genre": "Philosophy",
+      "description":"If you love History and Contemporary Fiction, then this book is ideal for you. The  two subjects are poles apart and, to combine them and make the outcome interesting is a mountainous task. But, Ashwin Sanghi makes it look effortless and does a perfect job.",
+      "Contributor": "Santosh Darurie",
+      "status": true
+    },
+    {
+      "cover": "images/bookscovers/empty.jpg",
+      "title": "శ్రీ శ్రీ నాటికలు",
+      "author":"",
+      "genre": "Poetry",
+      "description":"If you love History and Contemporary Fiction, then this book is ideal for you. The  two subjects are poles apart and, to combine them and make the outcome interesting is a mountainous task. But, Ashwin Sanghi makes it look effortless and does a perfect job.",
+      "Contributor": "Santosh Darurie",
+      "status": true
+    },
+    {
+      "cover": "images/bookscovers/krishnasatrisahityam.jpg",
+      "title": "కృష్ణశాస్త్రి సాహిత్యం- కృష్ణపక్షము",
+      "author":"Devulapalli Krishtnasastry",
+      "genre": "Poetry",
+      "description":"If you love History and Contemporary Fiction, then this book is ideal for you. The  two subjects are poles apart and, to combine them and make the outcome interesting is a mountainous task. But, Ashwin Sanghi makes it look effortless and does a perfect job.",
+      "Contributor": "Santosh Darurie",
+      "status": true
+    },
+    {
+      "cover": "images/bookscovers/empty.jpg",
+      "title": "ముసాఫిర్",
+      "author":"",
+      "genre": "Genearal",
+      "description":"If you love History and Contemporary Fiction, then this book is ideal for you. The  two subjects are poles apart and, to combine them and make the outcome interesting is a mountainous task. But, Ashwin Sanghi makes it look effortless and does a perfect job.",
+      "Contributor": "Santosh Darurie",
+      "status": true
+    },
+    {
+      "cover": "images/bookscovers/empty.jpg",
+      "title": "ఇతివృత్తం- గుడపాటి",
+      "author":"",
+      "genre": "Genearal",
+      "description":"If you love History and Contemporary Fiction, then this book is ideal for you. The  two subjects are poles apart and, to combine them and make the outcome interesting is a mountainous task. But, Ashwin Sanghi makes it look effortless and does a perfect job.",
+      "Contributor": "Santosh Darurie",
+      "status": true
+    },
+    {
+      "cover": "images/bookscovers/Thinking Straight.jpg",
+      "title": "Thinking Straight",
+      "author":"Steve Kneeland",
+      "genre": "Philosophy",
+      "description":"If you love History and Contemporary Fiction, then this book is ideal for you. The  two subjects are poles apart and, to combine them and make the outcome interesting is a mountainous task. But, Ashwin Sanghi makes it look effortless and does a perfect job.",
+      "Contributor": "Santosh Darurie",
+      "status": true
+    },
+    {
+      "cover": "images/bookscovers/The 10-Day MBA.jpg",
+      "title": "The 10-Day MBA",
+      "author":"Steven Silbiger",
+      "genre": "Technical",
+      "description":"If you love History and Contemporary Fiction, then this book is ideal for you. The  two subjects are poles apart and, to combine them and make the outcome interesting is a mountainous task. But, Ashwin Sanghi makes it look effortless and does a perfect job.",
+      "Contributor": "Santosh Darurie",
+      "status": true
+    },
+    {
+      "cover": "images/bookscovers/empty.jpg",
+      "title": "The scinece of Symbolism",
+      "author":"",
+      "genre": "Genaral",
+      "description":"If you love History and Contemporary Fiction, then this book is ideal for you. The  two subjects are poles apart and, to combine them and make the outcome interesting is a mountainous task. But, Ashwin Sanghi makes it look effortless and does a perfect job.",
+      "Contributor": "Santosh Darurie",
+      "status": true
+    },
+    {
+      "cover": "images/bookscovers/WhoMovedMyCheese.jpg",
+      "title": "Who Moved My Cheese?",
+      "author":"Spencer Johnson",
+      "genre": "Genaral",
+      "description":"If you love History and Contemporary Fiction, then this book is ideal for you. The  two subjects are poles apart and, to combine them and make the outcome interesting is a mountainous task. But, Ashwin Sanghi makes it look effortless and does a perfect job.",
+      "Contributor": "Santosh Darurie",
+      "status": true
+    },
+    {
+      "cover": "images/bookscovers/anandasri.jpg",
+      "title": "అనంతం- శ్రీ శ్రీ",
+      "author":"Shri Shri",
+      "genre": "Novel",
+      "description":"If you love History and Contemporary Fiction, then this book is ideal for you. The  two subjects are poles apart and, to combine them and make the outcome interesting is a mountainous task. But, Ashwin Sanghi makes it look effortless and does a perfect job.",
+      "Contributor": "Santosh Darurie",
+      "status": true
+    },
+    {
+      "cover": "images/bookscovers/asamardhuniJevanayatra.jpg",
+      "title": "అసమర్ధుని జీవయాత్ర- గోపీచంద్ ",
+      "author":"Tripuraneni Gopichand",
+      "genre": "Novel",
+      "description":"If you love History and Contemporary Fiction, then this book is ideal for you. The  two subjects are poles apart and, to combine them and make the outcome interesting is a mountainous task. But, Ashwin Sanghi makes it look effortless and does a perfect job.",
+      "Contributor": "Santosh Darurie",
+      "status": true
+    },
+    {
+      "cover": "images/bookscovers/empty.jpg",
+      "title": "సుప్రభ ",
+      "author":"",
+      "genre": "Poetry",
+      "description":"If you love History and Contemporary Fiction, then this book is ideal for you. The  two subjects are poles apart and, to combine them and make the outcome interesting is a mountainous task. But, Ashwin Sanghi makes it look effortless and does a perfect job.",
+      "Contributor": "Santosh Darurie",
+      "status": true
+    },
+    {
+      "cover": "images/bookscovers/empty.jpg",
+      "title": "శ్రీ అన్నమాచార్యుల కీర్తనలు ",
+      "author":"",
+      "genre": "Poetry",
+      "description":"If you love History and Contemporary Fiction, then this book is ideal for you. The  two subjects are poles apart and, to combine them and make the outcome interesting is a mountainous task. But, Ashwin Sanghi makes it look effortless and does a perfect job.",
+      "Contributor": "Santosh Darurie",
+      "status": true
+    },
+    {
+      "cover": "images/bookscovers/empty.jpg",
+      "title": "अताल्ला ख़ान की सूपरहिट गजलें ",
+      "author":"",
+      "genre": "Poetry",
+      "description":"If you love History and Contemporary Fiction, then this book is ideal for you. The  two subjects are poles apart and, to combine them and make the outcome interesting is a mountainous task. But, Ashwin Sanghi makes it look effortless and does a perfect job.",
+      "Contributor": "Santosh Darurie",
+      "status": true
+    },
+    {
+      "cover": "images/bookscovers/empty.jpg",
+      "title": "ప్రేమ లేఖలు",
+      "author":"",
+      "genre": "Novel",
+      "description":"If you love History and Contemporary Fiction, then this book is ideal for you. The  two subjects are poles apart and, to combine them and make the outcome interesting is a mountainous task. But, Ashwin Sanghi makes it look effortless and does a perfect job.",
+      "Contributor": "Santosh Darurie",
+      "status": true
+    },
+    {
+      "cover": "images/bookscovers/empty.jpg",
+      "title": "కిటికీ",
+      "author":"",
+      "genre": "General",
+      "description":"If you love History and Contemporary Fiction, then this book is ideal for you. The  two subjects are poles apart and, to combine them and make the outcome interesting is a mountainous task. But, Ashwin Sanghi makes it look effortless and does a perfect job.",
+      "Contributor": "Santosh Darurie",
+      "status": true
+    },
+    {
+      "cover": "images/bookscovers/visambhana.jpg",
+      "title": "విశ్వంభర",
+      "author":"C Narayana Reddy",
+      "genre": "General",
+      "description":"If you love History and Contemporary Fiction, then this book is ideal for you. The  two subjects are poles apart and, to combine them and make the outcome interesting is a mountainous task. But, Ashwin Sanghi makes it look effortless and does a perfect job.",
+      "Contributor": "Santosh Darurie",
+      "status": true
+    },
+    {
+      "cover": "images/bookscovers/srisrimahaprasthanam.jpg",
+      "title": "శ్రీ శ్రీ మహాప్రస్థానం ",
+      "author":"Shri Shri",
+      "genre": "General",
+      "description":"If you love History and Contemporary Fiction, then this book is ideal for you. The  two subjects are poles apart and, to combine them and make the outcome interesting is a mountainous task. But, Ashwin Sanghi makes it look effortless and does a perfect job.",
+      "Contributor": "Santosh Darurie",
+      "status": true
+    },
+    {
+      "cover": "images/bookscovers/empty.jpg",
+      "title": "General Psychology",
+      "author":"",
+      "genre": "Psychology",
+      "description":"If you love History and Contemporary Fiction, then this book is ideal for you. The  two subjects are poles apart and, to combine them and make the outcome interesting is a mountainous task. But, Ashwin Sanghi makes it look effortless and does a perfect job.",
+      "Contributor": "Santosh Darurie",
+      "status": true
+    },
+    {
+      "cover": "images/bookscovers/empty.jpg",
+      "title": "How To Play Guitar",
+      "author":"",
+      "genre": "General",
+      "description":"If you love History and Contemporary Fiction, then this book is ideal for you. The  two subjects are poles apart and, to combine them and make the outcome interesting is a mountainous task. But, Ashwin Sanghi makes it look effortless and does a perfect job.",
+      "Contributor": "Santosh Darurie",
+      "status": true
+    },
+    {
+      "cover": "images/bookscovers/Krishna Key.jpg",
+      "title": "Krishna Key",
+      "author":"Ashwin Sanghi",
+      "genre": "Fiction",
+      "description":"The 3 mistakes of my Life (TTMOML) follows the story of Govind Patel, a Mathematician and businessman. With two wonderful best friends; Omi and Ishaan by his side, Govinds aim is to start up his own Cricket and tuition business.",
+      "Contributor": "Pulak",
+      "status": false,
+      "IssuedTo": "Prasanna ELT"
+    }
+  ])
+
+
+db.books.find().pretty();
+
+db.createCollections("videos");
+
+db.videos.insert([
+  {
+    "title":"Build a RESTful API in 5 Minutes with NodeJS - Updated",
+    "url":"https://www.youtube.com/embed/p-x6WdwaJco",
+    "cover":"https://i.ytimg.com/vi/p-x6WdwaJco/mqdefault.jpg",
+    "type":"NodeJS"
+  },
+  {
+    "title":"Node.js Fundamentals",
+    "url":"https://www.youtube.com/embed/FVdH9YcB3Dg",
+    "cover":"https://i.ytimg.com/vi_webp/FVdH9YcB3Dg/mqdefault.webp",
+    "type":"NodeJS"
+  },
+  {
+    "title":"Learn HTML in 12 Minutes",
+    "url":"https://www.youtube.com/embed/bWPMSSsVdPk",
+    "cover":"https://i.ytimg.com/vi_webp/bWPMSSsVdPk/mqdefault.webp",
+    "type":"HTML"
+  },
+  {
+    "title":"Learn JavaScript in 12 Minutes",
+    "url":"https://www.youtube.com/embed/Ukg_U3CnJWI",
+    "cover":"https://img.youtube.com/vi/Ukg_U3CnJWI/0.jpg",
+    "type":"JavaScript"
+  },
+  {
+    "title":"Learn CSS in 12 Minutes",
+    "url":"https://www.youtube.com/embed/0afZj1G0BIE",
+    "cover":"https://i.ytimg.com/vi/0afZj1G0BIE/mqdefault.jpg",
+    "type":"CSS"
+  },
+  {
+    "title":"Learn PHP in 15 minutes",
+    "url":"https://www.youtube.com/embed/ZdP0KM49IVk",
+    "cover":"https://i.ytimg.com/vi_webp/ZdP0KM49IVk/mqdefault.webp",
+    "type":"PHP"
+  },
+  {
+    "title":"how can i become a good programmer",
+    "url":"https://www.youtube.com/embed/BjKmWk3oE4E",
+    "cover":"https://i.ytimg.com/vi_webp/BjKmWk3oE4E/mqdefault.webp",
+    "type":"Programming"
+  },
+  {
+    "title":"Mark Zuckerberg's Secrets to Success",
+    "url":"https://www.youtube.com/embed/bZuo3KcJflE",
+    "cover":"https://i.ytimg.com/vi_webp/bZuo3KcJflE/mqdefault.webp",
+    "type":"Non-Fiction"
+  },
+  {
+   "title":"Story of Dhirubhai Ambani",
+    "url":"https://www.youtube.com/embed/SH5m1_zVUWk",
+    "cover":"https://i.ytimg.com/vi_webp/SH5m1_zVUWk/mqdefault.webp",
+    "type":"Non-Fiction"
+  },
+  {
+    "title":"Designing A Pro HTML Site In Minutes",
+    "url":"https://www.youtube.com/embed/hg6nilxbbzM",
+    "cover":"https://i.ytimg.com/vi/hg6nilxbbzM/mqdefault.jpg",
+    "type":"HTML"
+  },
+  {
+    "title":"HTML Website Design Tutorial - How To Make a Side Menu Bar",
+    "url":"https://www.youtube.com/embed/afr9yVTGK-0",
+    "cover":"https://i.ytimg.com/vi_webp/afr9yVTGK-0/mqdefault.webp",
+    "type":"HTML"
+  },
+  {
+    "title":"CSS Website Design Tutorial - #4 Setting Up a Menu Bar",
+    "url":"https://www.youtube.com/embed/fGP7CjWnVww",
+    "cover":"https://i.ytimg.com/vi_webp/fGP7CjWnVww/mqdefault.webp",
+    "type":"CSS"
+  },
+  {
+    "title":"CSS Website Design Tutorial - #3 Professional Website Layout",
+    "url":"https://www.youtube.com/embed/X8F54z_AHTA",
+    "cover":"https://i.ytimg.com/vi_webp/X8F54z_AHTA/mqdefault.webp",
+    "type":"CSS"
+  },
+  {
+    "title":"CSS Website Design Tutorial - #2 Formatting and Layout Introduction",
+    "url":"https://www.youtube.com/embed/y59xha5Z8mU",
+    "cover":"https://i.ytimg.com/vi_webp/y59xha5Z8mU/mqdefault.webp",
+    "type":"CSS"
+  }
+])
+db.videos.find().pretty()
+
+
+db.createCollections("loginDetails");
+db.loginDetails.insert([
+{"username":"479724","password":"12345678","email":"sivakumar.routhu@cognizant.com","name":"Siva Routhu","isadmin":"false","designation":"PA"},
+{"username":"479760","password":"12345678","email":"abc@cognizant.com","name":"naidu","isadmin":"false","designation":"PA"},
+{"username":"473353","password":"tejuN@93","email":"sivakumar.routhu@cognizant.com","name":"Tejaswini","isadmin":"false","designation":"PA"},
+{"username":"473355","password":"span@92","email":"sivakumar.routhu@cognizant.com","name":"Spandana","isadmin":"false","designation":"PA"},
+{"username":"479692","password":"madhuK@93","email":"sivakumar.routhu@cognizant.com","name":"Madhurya","isadmin":"false","designation":"PA"}
+]);
+
+db.loginDetails.find().pretty();

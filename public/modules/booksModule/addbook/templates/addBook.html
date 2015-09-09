@@ -1,0 +1,50 @@
+<cigyan-banner banner-title='The ultimate Books Library' banner-message='Find something new to learn about today using Books'></cigyan-banner>
+    <div id="addBook">
+        <div class="addBookLeft">
+        <form action="/newBook" id="uploadForm" enctype="multipart/form-data" method="post" name="myForm" novalidate> 
+
+            <label for="title">Title:</label><input class="book-textfield" type="text" ng-model="title" name="title" placeholder="Enter the title of the book here.." min="1" max="50" required>
+                <span ng-show="myForm.title.$touched">
+                    <span style="color:red" ng-show="myForm.title.$error.required">Title is required.</span></span>
+           
+            
+            <label for="author">Author:</label><input class="book-textfield" type="text" ng-model="author" name="author" placeholder="Enter the author of the book here.." min="1" max="30" ng-pattern="/^[a-zA-Z\s]*$/" required>
+                <span ng-show="myForm.author.$touched">
+                    <span style="color:red" ng-show="myForm.author.$error.required">Author name is required.</span>
+                    <span style="color:green" ng-show="myForm.author.$error.pattern">Text only, please.</span>
+                </span>
+            
+            
+            <label for="genre">Genre:</label><input class="book-textfield" type="text" ng-model="genre" name="genre" placeholder="Enter the genre of the book here.." min="1" max="20" ng-pattern="/^[a-zA-Z\s]*$/" required>
+                <span ng-show="myForm.genre.$touched">
+                    <span style="color:red" ng-show="myForm.genre.$error.required">Genre type is required.</span>
+                    <span style="color:green" ng-show="myForm.genre.$error.pattern">Text only, please.</span>
+                </span>
+            
+            
+           <label for="Contributor">Contributor: </label><input class="book-textfield" type="text" ng-model="Contributor" name="Contributor" placeholder="Enter the name of the contributor here.." min="1" max="5" ng-pattern="/^[a-zA-Z\s]*$/" required>
+                <span ng-show="myForm.Contributor.$touched">
+                    <span style="color:red" ng-show="myForm.Contributor.$error.required">Contributor name is required.</span>
+                    <span style="color:green" ng-show="myForm.Contributor.$error.pattern">Text only, please.</span>
+                </span>
+            
+            
+            <label for="description">Description:</label><textarea class="book-textarea" ng-model="description" name="description" min="1" max="10" required></textarea> 
+                <span ng-show="myForm.description.$touched">
+                    <span style="color:red" ng-show="myForm.description.$error.required">Description for the book is required.</span>
+                </span>
+            
+            <label for="cover">Cover Image:</label>
+            <input my-upload class="book-cover custom-file-input" type="file" name="upload" onchange="
+            angular.element(this).scope().checkExt()" accept="image/*"/><span style="color:red" ng-if="!valid&&flag">Not a valid image</span>
+
+
+            <img ng-if="valid" src="{{image}}" alt="Image">
+
+            <input class="book-submit" type="submit" ng-click="addBook()" value="Add book" ng-disabled="myForm.$invalid||!valid"/>
+            <input class="book-cancel" type="reset" ng-click="" value="Cancel"/>
+            </form>
+        </div>
+        <div class="clear"></div>
+    </div>
+

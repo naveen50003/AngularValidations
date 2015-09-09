@@ -1,0 +1,42 @@
+        <div class="tableView">
+            
+            <p class="options_tableview"><label>Limit By :</label>         
+            <select ng-model="pageLength" ng-change='foo()'>
+                <option value=10>10</option>
+                <option value=20>20</option>
+                <option value=50>50</option>
+                <option value=100>100</option>
+            </select>
+            </p>
+
+            <table ng-table="tableParams" class="table table-responsive table-bordered table-hover">
+                <tr>
+                    <th>Course Name</th>
+                    <th>Course Code</th> 
+                    <th>Start Date</th>
+                    <th>End Date</th>
+                    <th>Start Time</th> 
+                    <th>End Time</th>
+                    <th>Venue</th>
+                    <th>Trainer</th> 
+                    <th>Target Audience</th>
+                </tr>
+
+                <tr ng-repeat="event in events|slice:currentPage:pageLength | filter:criteria">
+                    <td><a ui-sref="sessionDetails({sessionId:event._id})">{{event.courseName}}</a></td>
+                    <td>{{event.courseCode}}</td>
+                    <td>{{event.startDate}}</td>
+                    <td>{{event.endDate}}</td>
+                    <td>{{event.startTime}}</td>
+                    <td>{{event.endTime}}</td>
+                    <td>{{event.venue}}</td>
+                    <td>{{event.trainer}}</td>
+                    <td>{{event.targetAudience}}</td>
+                  </tr>
+
+            </table>
+        </div>
+</table>
+
+
+<cigyan-pagination total="{{events.length}}" currentpl="pageLength" cpno="currentPage" pag-no-array="pagNoArray"></cigyan-pagination>

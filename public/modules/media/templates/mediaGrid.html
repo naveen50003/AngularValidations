@@ -1,0 +1,17 @@
+<div>
+    <div id="mediaGrid" ng-repeat='media in mediaData'> 
+	<div class="mediaElement">
+        <a href="#/home/{{mediaType}}/{{media._id}}"><img class="gridElement" ng-src={{media.cover}} /></a>
+		<div class="play">
+			<a href="#/home/{{mediaType}}/{{media._id}}"><img src="http://cdn1.iconfinder.com/data/icons/flavour/button_play_blue.png"/></a>
+		</div>
+		<div class="title">
+        <a href="#/home/{{mediaType}}/{{media._id}}">{{media.title}}</a>
+		</div>
+		
+    <div class="clear"></div>
+		
+    </div>
+    </div>
+    <div class="clear"></div>
+</div>

@@ -1,0 +1,25 @@
+<header class="container">
+<div id="logo">
+    <a href ui-sref="books">CI GYAN TV</a>
+</div>
+</header>
+<div class="loginForm">
+		<form name="loginForm" id="MyForm" enctype="multipart/form-data" novalidate>
+		<div>
+		<label for="inputEmail" class="control-label col-xs-2">UserName :</label>
+		<input type="text" class="form-control" name="uName" placeholder="" ng-pattern="/^[0-9]*$/" ng-model="uName" required/>
+		<span ng-show="loginForm.uName.$touched">
+	        <span style="color:red" ng-show="loginForm.uName.$error.required">username is required.</span>
+	        <span style="color:green" ng-show="loginForm.uName.$error.pattern">Numbers only please</span>
+	    </span>
+	    </div>
+	    <div>
+		<label for="inputPassword" class="control-label col-xs-2">Password :</label>
+		<input type="password" class="form-control" name="pwd"  ng-blur="validate()" required/>
+		</div>
+		<input class="loginButton" type="submit" ng-click="login()"  value="login" />	
+		<input class="reset" type="reset"  value="clear" />	
+		</form>		
+		<span ng-if="loginStatus">Incorrect UserName</span>
+		<span ng-if="passwordStatus">Wrong password</span>
+</div>

@@ -1,0 +1,9 @@
+<div class="pagination-div"> 
+    <ul  class="pagination_border">
+        <li class="paginationclass"> <a href ng-click="startPage()" ng-class="{disabled: cpno == 0}">&lt;&lt;</a></li>
+        <li class="paginationclass"> <a href ng-class="{disabled: cpno == 0}" ng-click="prev()">&lt;</a></li>
+        <li class="paginationclass"><a href ng-repeat='i in pagNoArray' ng-click='goToPage(i)' ng-class="{active: i == cpno/currentpl+1}" >                      {{i}}</a></li>
+        <li class="paginationclass"> <a href ng-class="{disabled: ((cpno/currentpl)+1) == totalNoPages}" ng-click="next()">&gt;</a></li>
+        <li class="paginationclass"> <a href ng-class="{disabled: ((cpno/currentpl)+1) == totalNoPages}" ng-click="endPage()">&gt;&gt;</a></li>
+    </ul> 
+</div>

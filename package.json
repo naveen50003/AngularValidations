@@ -1,0 +1,20 @@
+{
+  "name": "CIGyanTv",
+  "version": "0.0.0",
+  "description": "to learn and explore",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "~4.12.4",
+    "body-parser": "~1.12.4",
+    "grunt": "~0.4.5",
+    "mongojs": "~0.18.2",
+    "client-sessions": "~0.7.0",
+    "mongoose":"*"
+  }
+}

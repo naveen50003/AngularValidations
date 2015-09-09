@@ -1,0 +1,21 @@
+<cigyan-banner banner-title='What you are learning today' banner-message='Teach more learn more explore more using CI Gyan'></cigyan-banner>
+
+<div class="learningSchedule">
+<h1>Learning Schedule</h1>
+<div ng-controller="sessionsController">
+
+        <ul class="calendarTabs">
+            <li ng-class="{ active: isActive('/home/calender/myCalendar') }"> <a href ui-sref="calendarTemplate">Calendar</a></li>
+            <li ng-class="{ active: isActive('/home/calender/tableView') }"><a href ui-sref="tableView">Table</a></li>
+            <li ng-class="{ active: isActive('/home/calender/addSession')}" ng-if="true"> <a href ui-sref="addSession">Add Session</a></li>
+            <li ng-class="{ active: isActive('/home/calender/admin')}" ng-if="true"> <a href ui-sref="sessionUserInfo">AdminCheckSessions</a></li>
+
+        </ul>
+     <div class="clear"></div>
+</div>
+<div id="calendarApp">
+        <div ui-view></div>
+</div>
+
+
+</div>

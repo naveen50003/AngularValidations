@@ -1,0 +1,36 @@
+<header class="container" ng-controller="ExampleController">
+    <div class="header" ng-controller="MenuCtrl">
+        <div id='menu-toggle' ng-click="toggle($event)">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <div id="logo">
+            <a href ui-sref="calendarTemplate">CI GYAN TV</a>
+        </div>
+        <nav id="navigation">
+            <div id='menu'>
+                <ul class="navbar" ng-class="{'open': open, '': !open}">
+                    <li><input type="text" placeholder="Search..."/><img src="images/searchicon.png" alt="searcy"/></li>
+                    <li><a href ui-sref='calendarTemplate' ng-class="getClass('/home/calender')"><img src="images/calendar.png" alt="">Learning Schedule</a></li>
+                    <li><a href ui-sref='books' ng-class="getClass('/home/books')"><img src="images/books.png" alt="">Books</a></li>
+                    <li><a href ui-sref='videos' ng-class="getClass('/home/videos')"><img src="images/video.png" alt="">Videos</a></li>
+                    <li class="login"><a href ng-class="getClass('/login')" ng-click="toggleMenu($event)"><img class="userImage" src="images/user_male.png" alt="userAccount"/></a>
+                      <ul class="userDetails logout" ng-if="menuOpened">
+                        <li ng-hide="loggedOut"><span>{{email}}</span></li>
+                        <li ng-hide="loggedOut"><span>{{designation}}</span></li>
+                        <li ng-hide="loggedOut"><span>{{name}}</span></li>
+                        <li ng-hide="loggedOut"><a href="#/authenticate" ng-click="logout()"><span>Logout</span></a></li>
+                      </ul>
+                    <div class="clear"></div>
+                    </li>
+                    <div class="clear"></div>
+                </ul>
+                <div class="clear"> </div>
+            </div>
+             <div class="clear"></div>
+        </nav>
+        <div class="clear"></div>
+    </div>
+        <div class="clear"></div>
+</header>

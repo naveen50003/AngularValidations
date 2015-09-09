@@ -1,0 +1,41 @@
+<cigyan-banner banner-title='The ultimate Books Library' banner-message='Find something new to learn about today using Books'></cigyan-banner>
+<div id="addVideo">
+	<form name="myForm1"  id="uploadForm" enctype="multipart/form-data"  novalidate>
+		<label for="title">Title:</label><input class="video-textfield" type="text" placeholder="Enter video title" name="title" ng-model="editDetails.title"  min="1" max="50" required/>
+		<span ng-show="myForm1.title.$touched">
+	        <span style="color:red" ng-show="myForm1.title.$error.required">Title is required.</span>
+	    </span>
+		
+		<label for="type">Type:</label><input class="video-textfield" type="text" placeholder="Enter type of video" name="type" ng-model="editDetails.type" min="1" max="50" ng-pattern="/^[a-zA-Z\s]*$/" required/>
+		<span ng-show="myForm1.type.$touched">
+	        <span style="color:red" ng-show="myForm1.type.$error.required">Type of Video is required.</span>
+	        <span style="color:green" ng-show="myForm1.type.$error.pattern">Text only, please.</span>
+	    </span>
+		
+		<label for="url">Video URL:</label>
+		<input class="video-textfield url-field" type="text" placeholder="Enter Video URL" name="url" onchange="angular.element(this).scope().checkUrl()" ng-model="editDetails.url" required/>
+		<span ng-show="myForm1.url.$touched">
+			<span style="color:red" ng-if="!valid&&flag">Not a valid URL</span>
+		</span>
+				
+		<label for="Contributor">Contributor:</label>
+		<input class="video-textfield" type="text" placeholder="Enter your name" name="Contributor" ng-model="editDetails.Contributor" min="1" max="50" ng-pattern="/^[a-zA-Z\s]*$/" required/>
+		<span ng-show="myForm1.Contributor.$touched">
+	        <span style="color:red" ng-show="myForm1.Contributor.$error.required">Contributor is required.</span>
+	        <span style="color:green" ng-show="myForm1.Contributor.$error.pattern">Text only, please.</span>
+	    </span>
+		
+		
+		<label for="description">Video Description:</label>
+		<textarea class="video-textarea" placeholder="Enter Video Description" name="description" ng-model="editDetails.description" required></textarea>
+		<span ng-show="myForm1.description.$touched">
+	        <span style="color:red" ng-show="myForm1.description.$error.required">Description is required.</span>
+	    </span>
+	
+	
+	<div>	
+	<input class="video-submit" type="submit" ng-click="updateTask(editDetails,'video')" value="Update video" ng-disabled="myForm1.$invalid&&!valid"/>
+	<input class="video-cancel" type="reset" ng-click="" value="Cancel"/>
+	</div>
+	</form>
+</div>

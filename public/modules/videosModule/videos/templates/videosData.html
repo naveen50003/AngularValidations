@@ -1,0 +1,17 @@
+
+	<div class="videoPlayer">
+		<div class="videoFrame">
+			<iframe
+				embed-src={{videoDes.url}} webkitallowfullscreen mozallowfullscreen allowfullscreen>
+			</iframe>
+
+		</div>
+		<div class="videoDescriptionDiv">
+			<h1 class="videoTitle">{{videoDes.title}}</h1>
+			<p class="videoDescription">{{videoDes.description}}</p>
+			<span class="editDeleteImages">
+			<a href ui-sref="editVideo({shareId:videoDes._id, type:'video'})"><img src="./images/edit.png" alt=""></a>
+					<a ng-click="deleteTask(videoDes._id)"><img src="./images/delete.jpg" alt=""></a>
+			</span>
+		</div>
+	</div>

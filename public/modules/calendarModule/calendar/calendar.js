@@ -1,0 +1,1 @@
+angular.module('calendarModule', ['ui.router','ui.calendar', 'ui.bootstrap']);

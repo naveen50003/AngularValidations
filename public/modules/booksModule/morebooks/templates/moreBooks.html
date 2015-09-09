@@ -1,0 +1,49 @@
+<cigyan-banner banner-title='The ultimate Books Library' banner-message='Find something new to learn about today using Books'></cigyan-banner>
+<div id="booksInLibrary">
+    <div class="top">
+        <div class="booksViewby">
+            <label>Limit By :</label>
+            <select ng-model="pageLength" ng-change='foo()'>
+                <option value=10>10</option>
+                <option value=20>20</option>
+                <option value=50>50</option>
+                <option value=100>100</option>
+            </select>
+            <label>Search By :  </label>
+            <select ng-model="selectedBook" ng-change="fun(search)">
+                <option value="all">All</option>
+                <option value="title">Title</option>
+                <option value="genre">Genre</option>
+                <option value="author">Author</option>
+                <option value="contributor">Contributor</option>
+            </select>
+
+            <label>Search : </label>
+			<input type="text" placeholder="Enter a keyword...." ng-model="search" ng-change="fun(search)">
+        </div>
+        <div class="icons">
+            <span class="addBook"><a href ui-sref="addBook">+ Add Book</a></span>
+            <span><img src="images/available.png"/>Available</span>
+            <span><img src="images/notavailable.png"/>Not Available</span>
+        </div>
+    </div>
+    <div class="clear"></div>
+    <cigyan-pagination total="{{::images.length}}" currentpl="pageLength" cpno="currentPage" pag-no-array="pagNoArray"></cigyan-pagination>
+
+    <div class="booksList">
+        <div class="book" ng-repeat='img in images |slice:currentPage:pageLength | filter:criteria'>
+            <a ui-sref="bookData({shareId:img._id})"><img class="coverPage" ng-src="{{img.cover}}"/></a>
+            <div class="details">
+                <p class="title"><a ui-sref="bookData({shareId:img._id})">{{::img.title}}</a></p>
+                <p class="genre"><label>Genre</label><span>{{::img.genre}}</span></p>
+                <p class="author"><label>Author</label><span>{{:: img.author }}</span></p>
+                <p class="donated"><label>Donated by</label><span>{{::img.Contributor}}</span></p>
+            </div>
+            <span class="availability" ng-if="img.status"><img src="images/available.png"/></span>
+            <span class="availability" ng-if="!img.status"><img src="images/notavailable.png"/></span>
+            <span class="clear"></span>
+        </div>
+    </div>
+
+    <cigyan-pagination total="{{::images.length}}" currentpl="pageLength" cpno="currentPage" pag-no-array="pagNoArray"></cigyan-pagination>
+</div>
